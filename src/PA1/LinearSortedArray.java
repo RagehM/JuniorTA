@@ -2,7 +2,6 @@ package PA1;
 public class LinearSortedArray {
     int array[];
     int no_of_elements;
-    int right;
     private LinearSortedArray(int size) {
         this.array= new int[size];
     }
