@@ -25,7 +25,5 @@ public class indexSort {
         int [] array = {9,8,7,3,2,5,1,2,4,3,0};
         array = indexSort(array);
         System.out.println(Arrays.toString(array));
-
-
     }
 }
