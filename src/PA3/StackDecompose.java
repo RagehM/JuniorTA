@@ -1,6 +1,6 @@
 package PA3;
 public class StackDecompose {
-    public static ArrayStack decompose(ArrayStack array ){
+    private static ArrayStack decompose(ArrayStack array ){
             ArrayStack even = new ArrayStack(array.size()/2);
             ArrayStack odd = new ArrayStack(array.size()/2+1);
             ArrayStack y = new ArrayStack(array.size()/2);
