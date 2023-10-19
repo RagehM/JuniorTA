@@ -1,4 +1,6 @@
 package PA4;
+import PA5.QueueObj;
+
 public class Palindrome {
     private static boolean isPalindrome ( String str ) {
         StackObj firstHalf = new StackObj ( str.length () / 2);

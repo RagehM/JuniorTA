@@ -1,4 +1,4 @@
-package PA4;
+package PA5;
 public class QueueObj
 {
 	private int maxsize;
