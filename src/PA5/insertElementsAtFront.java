@@ -35,8 +35,6 @@ public class insertElementsAtFront {
         insertAtFront(q1,q2);
 
         q1.printQueue();
-
-
 //        QueueObj q1 = new QueueObj(3);
 //        q1.enqueue(2);
 //        q1.enqueue(6);
