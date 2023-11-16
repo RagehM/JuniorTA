@@ -86,5 +86,42 @@ class LinkList {
 		return res;
 	}
 
-	
+//	The internal implementation of addones
+	private static void add_a_one(Link head){
+		Link curr = head;
+		while(curr!=null){
+			curr.data= (int)curr.data + 1;
+			curr = curr.next;
+		}
+	}
+	private static void add_a_one_2(Link head){
+		help(head);
+	}
+	private static void help(Link curr){
+		if(curr==null){
+			return;
+		}
+		else{
+			curr.data =(int)curr.data + 1;
+			help(curr.next);
+		}
+	}
+	public static void main(String[]args){
+		LinkList l = new LinkList();
+		l.insertLast(0);
+		l.insertLast(1);
+		l.insertLast(2);
+		l.insertLast(3);
+		l.insertLast(4);
+		l.insertLast(5);
+		l.insertLast(6);
+		l.insertLast(7);
+		l.insertLast(8);
+
+		System.out.println(l.toString());
+
+		add_a_one_2(l.head);
+
+		System.out.println(l.toString());
+	}
 }
