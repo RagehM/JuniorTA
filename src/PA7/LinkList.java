@@ -106,6 +106,31 @@ class LinkList {
 			help(curr.next);
 		}
 	}
+
+	public void cutList() {
+		if (head==null)
+			return;
+		Link current=head;
+		Link previous= null;
+		int count=0;
+		while (current!=null){
+			count++;
+			current = current.next;
+		}
+		current=head;
+		for (int i=1; i<count/2 + count%2; i++)
+		{
+			current=current.next;
+		}
+		previous = current;
+		while (current.next!=null)
+		{
+			current = current.next;
+		}
+		current.next = head;
+		head = previous.next;
+		previous.next = null;
+	}
 	public static void main(String[]args){
 		LinkList l = new LinkList();
 		l.insertLast(0);
