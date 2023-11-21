@@ -87,17 +87,17 @@ class LinkList {
 	}
 
 //	The internal implementation of addones
-	private static void add_a_one(Link head){
+	private void add_a_one(){
 		Link curr = head;
 		while(curr!=null){
 			curr.data= (int)curr.data + 1;
 			curr = curr.next;
 		}
 	}
-	private static void add_a_one_2(Link head){
+	private void add_a_one_2(){
 		help(head);
 	}
-	private static void help(Link curr){
+	private void help(Link curr){
 		if(curr==null){
 			return;
 		}
@@ -145,7 +145,7 @@ class LinkList {
 
 		System.out.println(l.toString());
 
-		add_a_one_2(l.head);
+		l.add_a_one_2();
 
 		System.out.println(l.toString());
 	}
