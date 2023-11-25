@@ -10,7 +10,7 @@ public class Queue {
     }
 
     public Object dequeue(){
-        return l.removeLast();
+        return l.removeFirst();
     }
 
     public Object peek(){
